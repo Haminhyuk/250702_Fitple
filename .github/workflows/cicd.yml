@@ -33,7 +33,7 @@ jobs:
           utcOffset: "+09:00"
 
       - name: Set artifact
-        run: echo "artifact=$(ls ./build/libs)" >> $GITHUB_ENV
+        run: echo "artifact=$(ls ./Fitple/build/libs)" >> $GITHUB_ENV
         working-directory: ./Fitple
 
       - name: Beanstalk Deploy
